@@ -25,7 +25,7 @@ func main() {
 	r.DELETE("/todo/:id", handlers.DeleteTodoHandler)
 	r.PUT("/todo", handlers.CompleteTodoHandler)
 
-	err := r.Run(":3000")
+	err := r.Run(":8080")
 	if err != nil {
 		panic(err)
 	}
