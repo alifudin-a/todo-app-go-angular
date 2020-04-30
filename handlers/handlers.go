@@ -12,7 +12,7 @@ import (
 
 // GetTodoListHandler returns all current todo items
 func GetTodoListHandler(c *gin.Context) {
-	c.JSON(http.StatusOK, todo.Get)
+	c.JSON(http.StatusOK, todo.Get())
 }
 
 // AddTodoHandler adds a new todo to the todo list
